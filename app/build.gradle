@@ -7,10 +7,10 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.esmaxcl.lubraxapp"
+        applicationId "com.esmaxcl.lubraxappcl"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 6
+        versionCode 7
         versionName "2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
