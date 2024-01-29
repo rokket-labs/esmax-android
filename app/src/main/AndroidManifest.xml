@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.esmaxcl.lubraxapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--android:icon="@mipmap/ic_launcher"-->
+
+
+    <application
+            android:allowBackup="true"
+
+            android:name="com.orm.SugarApp"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:logo="@mipmap/ic_launcher"
+
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data android:name="DATABASE" android:value="products.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.esmaxcl.lubraxapp" />
+
+
+
+        <activity android:name="com.esmaxcl.lubraxapp.activity.LoadPdfActivity"
+                  android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.ProductDetailActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.SelectVehicleProductActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.SelectVehicleTypeActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.SelectVehicleTypeActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.SelectVehicleModelActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.SelectVehicleModelActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.SelectVehicleBrandActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.SelectVehicleBrandActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.SelectVehicleActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.SelectVehicleActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.esmaxcl.lubraxapp.activity.DatasheetActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.esmaxcl.lubraxapp.activity.ProductDetailActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.MainActivity"/>
+        </activity>
+        <activity android:name="com.esmaxcl.lubraxapp.activity.EquivalenceProduct">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.EquivalenceTableActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.EquivalenceTableActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.MainActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.FaqDetail"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.FaqActivity"/>
+        </activity>
+        <activity
+                android:name="com.esmaxcl.lubraxapp.activity.FaqActivity"
+                android:launchMode="singleTop">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.esmaxcl.lubraxapp.activity.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.esmaxcl.lubraxapp.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

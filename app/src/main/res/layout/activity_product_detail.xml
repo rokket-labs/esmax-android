@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ProductDetailActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/linearlayout_detail">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/linearinternal_detail">
+                <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp" tools:srcCompat="@drawable/defaultpic"
+                        android:id="@+id/imageView_product"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="ContentDescription"/>
+                <TextView
+                        android:text="@string/nombre_producto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView_name" android:textSize="18sp"
+                        android:textStyle="bold" android:gravity="center"/>
+                <TextView
+                        android:text="@string/tipo_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView_engine"
+                        android:gravity="center" android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+            <TextView
+                    android:text="@string/descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_description_bar"
+                    android:background="@color/colorPrimary"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" android:padding="5dp"/>
+            <TextView
+                    android:text="@string/caracteristicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_description"
+                    android:padding="5dp"/>
+
+
+            <TextView
+                    android:text="@string/tipos_de_formatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_type_bar"
+                    android:background="@color/colorPrimary"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" android:padding="5dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_formats"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scrollbars="horizontal"
+                    android:overScrollMode="never"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:visibility="visible">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                    android:text="@string/tipo_de_usos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_use_bar"
+                    android:background="@color/colorPrimary"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" android:padding="5dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_uses"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scrollbars="horizontal"
+                    android:overScrollMode="never"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:visibility="visible">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                    android:text="@string/ficha_tecnica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_pdf_bar"
+                    android:background="@color/colorPrimary"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="14sp" android:padding="5dp"/>
+            <Button
+                    android:text="@string/descargar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button_pdf" android:layout_margin="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

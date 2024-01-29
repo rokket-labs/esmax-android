@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.SelectVehicleProductActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_vproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_fileName="loading.json"
+            android:visibility="invisible"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            tools:ignore="MissingConstraints"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/recyclerView_vproduct"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/textview_warning">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+            android:text="@string/esto_es_solo_una_guia_de_uso_no_una_recomendacion_del_fabricante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textview_warning"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:textAllCaps="false" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+    />
+
+</android.support.constraint.ConstraintLayout>

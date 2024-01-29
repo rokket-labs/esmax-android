@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_alignParentLeft="false"
+                                             android:layout_alignParentStart="false"
+                                             android:background="@drawable/border"
+>
+    
+    
+    <ImageView
+            android:id="@+id/ImageView_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="296dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round" android:layout_marginRight="296dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/todo"/>
+    
+    <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_name"
+            tools:layout_editor_absoluteY="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold" tools:ignore="MissingConstraints" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toEndOf="@+id/ImageView_icon" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" android:textColor="@color/colorPrimary"/>
+    <TextView
+            android:text="@string/empty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_subtext" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name"
+            app:layout_constraintStart_toEndOf="@+id/ImageView_icon" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <!--<TextView-->
+            <!--android:text="TextView"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp" tools:layout_editor_absoluteY="90dp"-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:background="@color/cardview_dark_background" app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--/>-->
+</android.support.constraint.ConstraintLayout>

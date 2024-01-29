@@ -1,0 +1,46 @@
+<resources>
+    <string name="empty">Vacío</string>
+    <string name="app_name">Lubrax Chile</string>
+    <string name="menu_name">Menú Name</string>
+    <string name="busquedas_recientes">Búsquedas Recientes</string>
+    <string name="empresa">Empresa</string>
+    <string name="nombre_producto">Nombre Producto</string>
+    <string name="tipo_motor">Tipo motor</string>
+    <string name="tipo_vehiculo">Tipo Vehículo</string>
+    <string name="tipo_marca">Marca</string>
+    <string name="tipo_modelo">Modelo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="caracteristicas">Características</string>
+    <string name="tipos_de_formatos">Tipos de Formatos</string>
+    <string name="tipo_de_usos">Tipo de Usos</string>
+    <string name="ficha_tecnica">Ficha Técnica</string>
+    <string name="productos">Productos</string>
+    <string name="competidores">Competidores</string>
+    <string name="formato">Formato</string>
+    <string name="descargar">Descargar</string>
+    <string name="pregunta">Pregunta</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="todo">TODO</string>
+    <string name="video_title">Vídeo Title</string>
+    <string name="esto_es_solo_una_guia_de_uso_no_una_recomendacion_del_fabricante">Esto es solo una guía de uso, no una
+        recomendación del fabricante.
+    </string>
+    <string name="pregunta_frecuente">Preguntas Frecuentes</string>
+    <string name="textview">TextView</string>
+    <string name="buscar">Buscar</string>
+    <string name="marca_mobil">Mobil</string>
+    <string name="marca_shell">Shell</string>
+    <string name="marca_valvoline">Valvoline</string>
+    <string name="marca_castrol">Castrol</string>
+    <string name="marca_ypf">YPF</string>
+    <string name="marca_texaco">Texaco</string>
+    <string name="marca_total">Total</string>
+    <string name="buscador_lubricantes">Buscador Lubricantes</string>
+    <string name="buscador_lubricantes_sub">Encuentra lubricante adecuado para tu Vehículo</string>
+    <string name="fichas_tecnicas">Fichas Técnicas</string>
+    <string name="fichas_tecnicas_sub">Encuentra las especificaciones de nuestros productos</string>
+    <string name="tabla_equivalencias">Tabla Equivalencias</string>
+    <string name="tabla_equivalencias_sub">Compara nuestros productos con los de la competencia</string>
+    <string name="preguntas_frecuentes">Preguntas Frecuentes</string>
+    <string name="preguntas_frecuentes_sub">Encuentra respuestas rápidas a tus dudas en todo momento</string>
+</resources>
